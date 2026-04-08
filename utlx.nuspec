@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>utlx</id>
+    <version>1.0.0</version>
+    <title>UTL-X - Universal Transformation Language Extended</title>
+    <authors>Ir. Marcel A. Grauwen</authors>
+    <owners>grauwen</owners>
+    <projectUrl>https://github.com/grauwen/utl-x</projectUrl>
+    <licenseUrl>https://github.com/grauwen/utl-x/blob/main/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/grauwen/utl-x</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/grauwen/utl-x/issues</bugTrackerUrl>
+    <tags>utlx transformation xml json csv yaml data-transformation format-agnostic cli</tags>
+    <summary>Format-agnostic functional transformation language for XML, JSON, CSV, YAML, and more</summary>
+    <description>
+UTL-X (Universal Transformation Language Extended) is a format-agnostic functional transformation language.
+
+Features:
+- Convert between XML, JSON, CSV, YAML, OData and 6 schema formats
+- 652 built-in standard library functions
+- Identity mode: `cat data.xml | utlx` (instant format conversion)
+- Strong type system with compile-time checking
+- Multi-input transformations across different formats
+- GraalVM native binary — instant startup, no JVM required
+
+Quick start:
+  echo '{"name":"hello"}' | utlx          # JSON to XML
+  cat data.xml | utlx --to yaml           # XML to YAML
+  utlx transform script.utlx input.xml    # Script-based transformation
+    </description>
+    <releaseNotes>https://github.com/grauwen/utl-x/releases/tag/v1.0.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
