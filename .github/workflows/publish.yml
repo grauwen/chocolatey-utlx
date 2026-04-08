@@ -1,0 +1,17 @@
+name: Publish to Chocolatey
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pack
+        run: choco pack utlx.nuspec
+
+      - name: Push to Chocolatey
+        run: choco push utlx.1.0.0.nupkg --source https://push.chocolatey.org/ --api-key ${{ secrets.CHOCOLATEY_API_KEY }}
