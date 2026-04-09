@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>utlx</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>UTL-X - Universal Transformation Language Extended</title>
     <authors>Ir. Marcel A. Grauwen</authors>
     <owners>grauwen</owners>
@@ -29,7 +29,7 @@ Quick start:
   cat data.xml | utlx --to yaml           # XML to YAML
   utlx transform script.utlx input.xml    # Script-based transformation
     </description>
-    <releaseNotes>https://github.com/grauwen/utl-x/releases/tag/v1.0.0</releaseNotes>
+    <releaseNotes>https://github.com/grauwen/utl-x/releases/tag/v1.0.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
