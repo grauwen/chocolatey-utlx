@@ -14,4 +14,6 @@ jobs:
         run: choco pack utlx.nuspec
 
       - name: Push to Chocolatey
-        run: choco push utlx.1.0.1.nupkg --source https://push.chocolatey.org/ --api-key ${{ secrets.CHOCOLATEY_API_KEY }}
+        run: |
+          $nupkg = Get-ChildItem -Filter "utlx.*.nupkg" | Select-Object -First 1
+          choco push $nupkg.Name --source https://push.chocolatey.org/ --api-key ${{ secrets.CHOCOLATEY_API_KEY }}
