@@ -8,7 +8,6 @@
     <owners>grauwen</owners>
     <projectUrl>https://github.com/grauwen/utl-x</projectUrl>
     <packageSourceUrl>https://github.com/grauwen/chocolatey-utlx</packageSourceUrl>
-    <projectSourceUrl>https://github.com/grauwen/utl-x</projectSourceUrl>
     <iconUrl>https://raw.githubusercontent.com/grauwen/utl-x/main/docs/images/utlx-icon.png</iconUrl>
     <licenseUrl>https://github.com/grauwen/utl-x/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -38,3 +37,4 @@ Quick start:
     <file src="tools\**" target="tools" />
   </files>
 </package>
+
