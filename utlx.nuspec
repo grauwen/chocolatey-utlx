@@ -7,9 +7,11 @@
     <authors>Ir. Marcel A. Grauwen</authors>
     <owners>grauwen</owners>
     <projectUrl>https://github.com/grauwen/utl-x</projectUrl>
+    <packageSourceUrl>https://github.com/grauwen/chocolatey-utlx</packageSourceUrl>
+    <projectSourceUrl>https://github.com/grauwen/utl-x</projectSourceUrl>
+    <iconUrl>https://raw.githubusercontent.com/grauwen/utl-x/main/docs/images/utlx-icon.png</iconUrl>
     <licenseUrl>https://github.com/grauwen/utl-x/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/grauwen/utl-x</projectSourceUrl>
     <bugTrackerUrl>https://github.com/grauwen/utl-x/issues</bugTrackerUrl>
     <tags>utlx transformation xml json csv yaml data-transformation format-agnostic cli</tags>
     <summary>Format-agnostic functional transformation language for XML, JSON, CSV, YAML, and more</summary>
