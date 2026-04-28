@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>utlx</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>UTL-X - Universal Transformation Language Extended</title>
     <authors>Ir. Marcel A. Grauwen</authors>
     <owners>grauwen</owners>
@@ -23,13 +23,14 @@ Features:
 - Strong type system with compile-time checking
 - Multi-input transformations across different formats
 - GraalVM native binary — instant startup, no JVM required
+- B13/B14 bug fixes: clean XML-to-JSON/YAML output, writeAttributes option
 
 Quick start:
   echo '{"name":"hello"}' | utlx          # JSON to XML
   cat data.xml | utlx --to yaml           # XML to YAML
   utlx transform script.utlx input.xml    # Script-based transformation
     </description>
-    <releaseNotes>https://github.com/grauwen/utl-x/releases/tag/v1.0.1</releaseNotes>
+    <releaseNotes>https://github.com/grauwen/utl-x/releases/tag/v1.0.2</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
