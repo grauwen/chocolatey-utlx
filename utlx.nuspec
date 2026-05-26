@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>utlx</id>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <title>UTL-X - Universal Transformation Language Extended</title>
     <authors>Ir. Marcel A. Grauwen</authors>
     <owners>grauwen</owners>
@@ -19,19 +19,19 @@ UTL-X (Universal Transformation Language Extended) is a format-agnostic function
 
 Features:
 - Convert between XML, JSON, CSV, YAML, OData and 6 schema formats
-- 652 built-in standard library functions
+- 695 built-in standard library functions
 - Identity mode: `cat data.xml | utlx` (instant format conversion)
 - Strong type system with compile-time checking
 - Multi-input transformations across different formats
 - GraalVM native binary — instant startup, no JVM required
-- NEW in 1.2.0: UTF-16 and multi-encoding support (SAP/BizTalk integration)
+- NEW in 1.2.1: XMLDSig signing/verification, RSA crypto, JWT/JWS creation, JSON Patch (RFC 6902)
 
 Quick start:
   echo '{"name":"hello"}' | utlx          # JSON to XML
   cat data.xml | utlx --to yaml           # XML to YAML
   utlx transform script.utlx input.xml    # Script-based transformation
     </description>
-    <releaseNotes>https://github.com/grauwen/utl-x/releases/tag/v1.2.0</releaseNotes>
+    <releaseNotes>https://github.com/grauwen/utl-x/releases/tag/v1.2.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
