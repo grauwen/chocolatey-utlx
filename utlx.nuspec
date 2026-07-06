@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>utlx</id>
-    <version>1.2.2</version>
+    <version>1.3.0</version>
     <title>UTL-X - Universal Transformation Language Extended</title>
     <authors>Ir. Marcel A. Grauwen</authors>
     <owners>grauwen</owners>
@@ -24,14 +24,14 @@ Features:
 - Strong type system with compile-time checking
 - Multi-input transformations across different formats
 - GraalVM native binary — instant startup, no JVM required
-- NEW in 1.2.2: XMLDSig signing/verification, RSA crypto, JWT/JWS creation, JSON Patch (RFC 6902)
+- NEW in 1.3.0: XMLDSig signing/verification, RSA crypto, JWT/JWS creation, JSON Patch (RFC 6902)
 
 Quick start:
   echo '{"name":"hello"}' | utlx          # JSON to XML
   cat data.xml | utlx --to yaml           # XML to YAML
   utlx transform script.utlx input.xml    # Script-based transformation
     </description>
-    <releaseNotes>https://github.com/grauwen/utl-x/releases/tag/v1.2.2</releaseNotes>
+    <releaseNotes>https://github.com/grauwen/utl-x/releases/tag/v1.3.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
