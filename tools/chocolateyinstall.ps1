@@ -1,8 +1,8 @@
 $ErrorActionPreference = 'Stop'
 
 $packageName = 'utlx'
-$url = 'https://github.com/grauwen/utl-x/releases/download/v1.2.2/utlx-windows-x64.exe'
-$checksum = 'bba15e206a7c3514c433a797e4a853b6c5f6acb64f2052c38b40363024e3cbb1'
+$url = 'https://github.com/grauwen/utl-x/releases/download/v1.3.0/utlx-windows-x64.exe'
+$checksum = 'd5449120928343ba207b74ac099dbd3661fc78eccb0bea4350d8991ec9720c99'
 $checksumType = 'sha256'
 
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
@@ -22,5 +22,5 @@ Get-ChocolateyWebFile -PackageName $packageName `
 # Create a shim so 'utlx' is available on PATH
 Install-BinFile -Name 'utlx' -Path $exePath
 
-Write-Host "UTL-X v1.2.2 installed successfully!" -ForegroundColor Green
+Write-Host "UTL-X v1.3.0 installed successfully!" -ForegroundColor Green
 Write-Host "Try: utlx --version" -ForegroundColor Cyan
